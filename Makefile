@@ -52,3 +52,5 @@ pull_translations:
 validate-no-uncommitted-package-lock-changes:
 	# Checking for package-lock.json changes...
 	git diff --exit-code package-lock.json
+pull_translations:
+	atlas pull --filter=es_419 translations/frontend-app-profile/src/i18n/messages:src/i18n/messages
